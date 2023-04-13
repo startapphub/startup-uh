@@ -1,12 +1,12 @@
 {
   "theme_color": "#585554",
   "background_color": "#f0ebe6",
-  "display": "fullscreen",
+  "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Next Typescript Tailwind CSS",
-  "short_name": "Next Typescript Tailwind CSS",
-  "description": "Unofficial Next.js + Typescript + Tailwind CSS starter with a latest package",
+  "name": "Startup Unhas",
+  "short_name": "Startup UH",
+  "description": "Unofficial Startup Unhas Application",
   "icons": [
     {
       "src": "/icons/icon-192x192.png",
