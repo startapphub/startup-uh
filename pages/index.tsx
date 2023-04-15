@@ -5,6 +5,7 @@ import {
   MenuCepat,
   TopEvent,
 } from '../components/Home';
+import BottomNav from 'components/BottomNav';
 
 const Home: NextPage = () => (
   <>
@@ -14,6 +15,7 @@ const Home: NextPage = () => (
       <MenuCepat />
       <TopEvent />
     </main>
+    <BottomNav />
   </>
 );
 

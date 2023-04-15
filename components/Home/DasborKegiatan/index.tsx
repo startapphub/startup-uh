@@ -4,7 +4,7 @@ import Row2 from './Row2';
 
 const DasborKegiatan: FC = () => (
   <div className="flex gap-2 items-center relative w-full px-3 py-4">
-    <div className="box-light-gray" />
+    <div className="box-light-gray rounded-[30px]" />
     <Row1 />
     <Row2 />
   </div>
