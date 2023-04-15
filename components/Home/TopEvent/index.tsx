@@ -20,7 +20,7 @@ const EventItem: FC = () => (
 const TopEvent: FC = () => (
   <div className="flex flex-col gap-4 w-full my-6">
     <p className="text-gray-50 font-extrabold text-lg px-2">Top Event</p>
-    <div className="flex flex-nowrap overflow-x-scroll gap-4 w-80">
+    <div className="flex flex-nowrap overflow-x-scroll gap-4 w-[90vw]">
       <EventItem />
       <EventItem />
       <EventItem />

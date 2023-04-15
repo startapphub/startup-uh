@@ -21,7 +21,7 @@ const Layout: FC<LayoutProps> = ({
         <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
-      <main className="mx-5">{children}</main>
+      <main className="px-[5vw]">{children}</main>
       {isBottomNav && <BottomNav />}
     </>
   );

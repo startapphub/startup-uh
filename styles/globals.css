@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#0b0c0e] bg-top-ellipse box-border;
+  @apply bg-[#0b0c0e] bg-top-ellipse box-border overflow-x-hidden;
 }
 
 .bg-top-ellipse {
