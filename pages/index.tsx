@@ -1,7 +1,10 @@
 import { type NextPage } from 'next';
-import Header from '../components/Home/Header';
-import DasborKegiatan from '../components/Home/DasborKegiatan';
-import MenuCepat from 'components/Home/MenuCepat';
+import {
+  Header,
+  DasborKegiatan,
+  MenuCepat,
+  TopEvent,
+} from '../components/Home';
 
 const Home: NextPage = () => (
   <>
@@ -9,6 +12,7 @@ const Home: NextPage = () => (
     <main className="mx-5">
       <DasborKegiatan />
       <MenuCepat />
+      <TopEvent />
     </main>
   </>
 );
