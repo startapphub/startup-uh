@@ -11,36 +11,40 @@ export default function Document() {
         <meta name="apple-mobile-web-app-title" content="Startup UH" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
-        {/* <meta name="msapplication-config" content="/browserconfig.xml" /> */}
         <meta name="msapplication-TileColor" content="#585554" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="theme-color" content="#252627" />
 
-        {/* <link
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
+
+        <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="icons/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
-        /> */}
+          href="icons/favicon-16x16.png"
+        />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        {/* <link
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#585554" />
+        <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
-        /> */}
+          href="icons/apple-touch-icon.png"
+        />
         <link rel="shortcut icon" href="/favicon.ico" />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://startup-uh.vercel.app" />
         <meta name="twitter:title" content="Startup UH" />
-        {/* <meta name="twitter:image" content="/icon-192x192.png" /> */}
+        <meta name="twitter:image" content="icons/icon-192x192.png" />
         <meta name="twitter:image:alt" content="Hashop" />
         <meta name="twitter:app:country" content="US" />
         <meta name="twitter:app:country" content="ID" />
@@ -49,7 +53,7 @@ export default function Document() {
         <meta property="og:title" content="Startup UH" />
         <meta property="og:site_name" content="Startup UH" />
         <meta property="og:url" content="https://startup-uh.vercel.app" />
-        {/* <meta property="og:image" content="/icon-192x192.png" /> */}
+        <meta property="og:image" content="icons/icon-192x192.png" />
         <meta property="og:image:alt" content="Startup UH" />
 
         <meta name="author" content="#BuildAppWithMin" />

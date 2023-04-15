@@ -11,5 +11,5 @@ body {
 }
 
 .box-light-gray {
-  @apply absolute inset-0 bg-[#404040] backdrop-filter backdrop-blur bg-opacity-10;
+  @apply absolute inset-0 bg-[#404040] backdrop-filter backdrop-blur bg-opacity-40;
 }
