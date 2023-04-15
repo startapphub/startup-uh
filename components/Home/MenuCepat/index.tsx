@@ -10,7 +10,9 @@ const MenuIcon: FC<{ src?: string }> = ({ src = '' }) => (
         src={src}
         width={32}
         height={32}
+        quality={100}
         alt="Menu Cepat"
+        priority
       />
     </div>
   </div>
