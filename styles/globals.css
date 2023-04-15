@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#0b0c0e] bg-top-ellipse box-border;
+}
+
+.bg-top-ellipse {
+  @apply absolute bg-[url("/assets/ellipse.svg")] bg-no-repeat -z-50;
+}
+
+.box-light-gray {
+  @apply absolute inset-0 bg-[#404040] backdrop-filter backdrop-blur bg-opacity-40;
+}

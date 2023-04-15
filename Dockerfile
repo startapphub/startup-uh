@@ -3,9 +3,9 @@ ARG VERSION=lts-alpine
 FROM node:$VERSION
 
 # Set label maintainer, version & description
-LABEL maintainer="danangekal@gmail.com"
+LABEL maintainer="iskandarm20d@student.unhas.ac.id"
 LABEL version="0.1.0"
-LABEL description="Unofficial Next.js + Typescript + Tailwind CSS starter with a latest package"
+LABEL description="Unofficial Startup Unhas Application"
 
 # Set working directory
 WORKDIR /app
