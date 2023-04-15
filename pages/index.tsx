@@ -1,22 +1,19 @@
 import { type NextPage } from 'next';
+import Layout from 'components/Layout';
 import {
   Header,
   DasborKegiatan,
   MenuCepat,
   TopEvent,
 } from '../components/Home';
-import BottomNav from 'components/BottomNav';
 
 const Home: NextPage = () => (
-  <>
+  <Layout title="Startup Unhas" isBottomNav>
     <Header />
-    <main className="mx-5">
-      <DasborKegiatan />
-      <MenuCepat />
-      <TopEvent />
-    </main>
-    <BottomNav />
-  </>
+    <DasborKegiatan />
+    <MenuCepat />
+    <TopEvent />
+  </Layout>
 );
 
 export default Home;
