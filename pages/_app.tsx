@@ -6,7 +6,10 @@ import 'styles/globals.css';
 
 import { Nunito } from 'next/font/google';
 
-const nunito = Nunito({ subsets: ['latin'] });
+const nunito = Nunito({
+  subsets: ['latin'],
+  fallback: ['system-ui', 'arial'],
+});
 
 const App: AppType<AppProps> = ({ Component, pageProps }) => (
   <>
