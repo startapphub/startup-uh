@@ -1,17 +1,27 @@
 import { AppProps /* , AppContext */ } from 'next/app';
 import { type AppType } from 'next/app';
+import Head from 'next/head';
 
 import 'styles/globals.css';
 
 import { Nunito } from 'next/font/google';
 
-const nunito = Nunito({ subsets: ['latin'] });
+const nunito = Nunito({
+  subsets: ['latin'],
+  fallback: ['system-ui', 'arial'],
+});
 
 const App: AppType<AppProps> = ({ Component, pageProps }) => (
   <>
-    <main className={nunito.className}>
+    <Head>
+      <meta
+        name="viewport"
+        content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+      />
+    </Head>
+    <div className={nunito.className}>
       <Component {...pageProps} />
-    </main>
+    </div>
   </>
 );
 

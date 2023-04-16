@@ -3,7 +3,7 @@ import { Timer1, Clock, Location } from 'iconsax-react';
 
 const Row1: FC = () => (
   <div className="relative z-10 w-9/12 px-3 py-2">
-    <div className="absolute inset-0 bg-[#1B1B1B] backdrop-filter backdrop-blur-lg opacity-80 rounded-[25px] h-full" />
+    <div className="absolute inset-0 bg-[#1B1B1B] backdrop-filter backdrop-blur-lg bg-opacity-80 rounded-[25px] h-full" />
     <div className="relative z-20">
       <div className="flex justify-start items-center">
         <div className="relative h-7 w-7">

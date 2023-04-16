@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#0b0c0e] bg-top-ellipse box-border;
+  @apply bg-[#0b0c0e] bg-top-ellipse box-border overflow-x-hidden font-sans;
 }
 
 .bg-top-ellipse {
-  @apply absolute bg-[url("/assets/ellipse.svg")] bg-no-repeat -z-50;
+  @apply bg-[url("/assets/ellipse.svg")] bg-no-repeat -z-50;
 }
 
 .box-light-gray {
-  @apply absolute inset-0 bg-[#404040] backdrop-filter backdrop-blur bg-opacity-40;
+  @apply inset-0 bg-[#404040] bg-clip-padding backdrop-filter backdrop-blur bg-opacity-40;
 }
