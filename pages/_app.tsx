@@ -6,6 +6,8 @@ import 'styles/globals.css';
 
 import { Nunito } from 'next/font/google';
 
+import NextNprogress from 'nextjs-progressbar';
+
 const nunito = Nunito({
   subsets: ['latin'],
   fallback: ['system-ui', 'arial'],
@@ -19,6 +21,14 @@ const App: AppType<AppProps> = ({ Component, pageProps }) => (
         content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
       />
     </Head>
+    <NextNprogress
+      color="#ff2137"
+      options={{ showSpinner: false }}
+      showOnShallow={true}
+      startPosition={0.3}
+      stopDelayMs={200}
+      height={3}
+    />
     <div className={nunito.className}>
       <Component {...pageProps} />
     </div>
