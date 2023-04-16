@@ -2,6 +2,7 @@ import { type FC } from 'react';
 import Image from 'next/image';
 import TextBadge from 'components/children/TextBadge';
 import { Briefcase, Messages3 } from 'iconsax-react';
+import { FaLinkedin, FaTwitterSquare, FaInstagramSquare } from 'react-icons/fa';
 
 const Box: FC = () => (
   <div className="flex flex-col items-center justify-center box-light-gray w-full h-fit rounded-3xl mt-5 p-4">
@@ -22,25 +23,10 @@ const Box: FC = () => (
             The Father of Doge | CEO
           </p>
         </div>
-        <div className="flex items-center">
-          <Image
-            src="/assets/match/icons/linkedin.svg"
-            width={20}
-            height={20}
-            alt="Social Media"
-          />
-          <Image
-            src="/assets/match/icons/ig.svg"
-            width={20}
-            height={20}
-            alt="Social Media"
-          />
-          <Image
-            src="/assets/match/icons/twitter.svg"
-            width={20}
-            height={20}
-            alt="Social Media"
-          />
+        <div className="flex items-center gap-2">
+          <FaLinkedin size={25} color="#A1A2A2" />
+          <FaInstagramSquare size={25} color="#A1A2A2" />
+          <FaTwitterSquare size={25} color="#A1A2A2" />
         </div>
       </div>
     </div>
