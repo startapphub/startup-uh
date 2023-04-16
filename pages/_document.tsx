@@ -15,11 +15,6 @@ export default function Document() {
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="theme-color" content="#252627" />
 
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
-        />
-
         <link
           rel="icon"
           type="image/png"
