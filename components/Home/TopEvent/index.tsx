@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const EventItem: FC = () => (
   <div className="flex-shrink-0 relative w-72 h-40">
-    <div className="box-light-gray rounded-[30px]" />
+    <div className="absolute box-light-gray rounded-[30px]" />
     <div className="flex z-10">
       <Image
         className="absolute inset-0 m-auto h-auto rounded-3xl px-2"

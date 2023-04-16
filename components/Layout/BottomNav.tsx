@@ -15,7 +15,7 @@ const NavItem: FC<NavItemProps> = ({ icon, isActive = false }) => (
 
 const BottomNav: FC = () => (
   <div className="fixed bottom-0 w-full h-16">
-    <div className="box-light-gray rounded-3xl" />
+    <div className="absolute box-light-gray rounded-3xl" />
     <div className="relative z-10">
       <div className="flex justify-around items-start h-full px-4 py-2 text-gray-50">
         <NavItem
