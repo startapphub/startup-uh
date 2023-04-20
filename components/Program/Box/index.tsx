@@ -8,7 +8,7 @@ const Box: FC = () => (
     <p className="font-bold text-gray-50 text-base text-start py-2">
       Pelantikan Upgrading & Rapat Kerja
     </p>
-    <TextBadge color="bg-gray-300" text="Tema" />
+    <TextBadge color="gray" text="Tema" />
     <p className="font-semibold text-[12px] text-gray-50 text-center">
       “Accelerating development through organizational skills to create creative
       & innovative Entrepreneure”
