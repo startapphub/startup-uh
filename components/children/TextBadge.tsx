@@ -1,8 +1,17 @@
-import { type FC } from 'react';
+import React, { type FC, ReactHTML } from 'react';
 
-const TextBadge: FC<{ color: string; text: any }> = ({ color, text }) => (
+interface TextBadgeProps extends ReactHTML {
+  color: string;
+  text: any;
+  className: string;
+}
+
+const TextBadge: FC<TextBadgeProps> = ({ color, text, className }) => (
   <span
-    className={`text-${color}-500 bg-${color}-400 text-xs font-semibold bg-opacity-10 rounded-full px-2 py-1`}
+    className={
+      className +
+      `text-${color}-500 bg-${color}-400 text-xs font-semibold bg-opacity-10 rounded-full px-2 py-1`
+    }
   >
     {text}
   </span>
