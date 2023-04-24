@@ -9,10 +9,9 @@ export default function Document() {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Startup UH" />
-        <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="msapplication-TileColor" content="#585554" />
-        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="msapplication-tap-highlight" content="yes" />
         <meta name="theme-color" content="#252627" />
 
         <link
@@ -40,8 +39,7 @@ export default function Document() {
         <meta name="twitter:url" content="https://startup-uh.vercel.app" />
         <meta name="twitter:title" content="Startup UH" />
         <meta name="twitter:image" content="icons/icon-192x192.png" />
-        <meta name="twitter:image:alt" content="Hashop" />
-        <meta name="twitter:app:country" content="US" />
+        <meta name="twitter:image:alt" content="startup-hasanuddin" />
         <meta name="twitter:app:country" content="ID" />
 
         <meta property="og:type" content="website" />

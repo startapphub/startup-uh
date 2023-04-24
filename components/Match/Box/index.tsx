@@ -31,9 +31,9 @@ const Box: FC = () => (
       </div>
     </div>
     <div className="flex items-center w-full my-2 gap-2">
-      <TextBadge color="blue" text="Memeable" />
-      <TextBadge color="blue" text="Programming" />
-      <TextBadge color="blue" text="Leadership" />
+      <TextBadge className="bg-blue-500 text-blue-600" text="Memeable" />
+      <TextBadge className="bg-blue-500 text-blue-600" text="Programming" />
+      <TextBadge className="bg-blue-500 text-blue-600" text="Leadership" />
     </div>
     <p className="font-medium text-gray-50 text-sm text-start py-1 leading-4">
       {`I'm interested in things that change the world or that affect the future and wondrous, new technology where you see it, and you're like, 'Wow, how did that even happen? How is that possible?'`}

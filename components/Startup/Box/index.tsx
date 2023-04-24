@@ -20,7 +20,7 @@ const Box: FC = () => (
         </div>
       </div>
     </div>
-    <TextBadge color="purple" text="Fintech" />
+    <TextBadge className="bg-purple-500 text-purple-600" text="Fintech" />
     <p className="font-medium text-sm text-gray-50 my-2 leading-5">
       Metacoin adalah startup yang bergerak di bidang Fintech yang berfokus pada
       pengembangan aplikasi mobile yang berbasis blockchain.
