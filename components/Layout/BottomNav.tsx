@@ -7,7 +7,11 @@ type NavItemProps = {
 };
 
 const NavItem: FC<NavItemProps> = ({ icon, isActive = false }) => (
-  <div className="flex flex-col items-center justify-center gap-1">
+  <div
+    className={`flex flex-col items-center justify-center gap-1 ${
+      !isActive && 'opacity-40'
+    }`}
+  >
     {icon}
     {isActive && <span className="bg-gray-50 w-1 h-1 rounded-full" />}
   </div>
