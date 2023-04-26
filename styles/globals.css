@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply scrollbar-hide;
+}
+
 body {
-  @apply bg-[#0b0c0e] bg-top-ellipse box-border overflow-x-hidden font-sans;
+  @apply bg-[#0b0c0e] bg-top-ellipse box-border overflow-x-hidden font-sans pb-20;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .bg-top-ellipse {

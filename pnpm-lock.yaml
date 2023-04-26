@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@rive-app/react-canvas': ^3.0.45
   '@types/node': latest
   '@types/react': latest
   '@types/react-dom': latest
@@ -26,7 +25,6 @@ specifiers:
   typescript: latest
 
 dependencies:
-  '@rive-app/react-canvas': 3.0.45_react@18.2.0
   autoprefixer: 10.4.14_postcss@8.4.21
   daisyui: 2.51.5_j7yt3jd32cwenjqavrrga47yr4
   iconsax-react: 0.0.8_react@18.2.0
@@ -1437,19 +1435,6 @@ packages:
       tiny-glob: 0.2.9
       tslib: 2.5.0
     dev: true
-
-  /@rive-app/canvas/1.1.3:
-    resolution: {integrity: sha512-Bw8qEgtEnpvjj7g83jKyq/MqX/GiBDQKHnPk42Rw3tdfknaHH5/lIK0Oa4MWlGRtKtxO62gkprNLYyxgDq5Ajw==}
-    dev: false
-
-  /@rive-app/react-canvas/3.0.45_react@18.2.0:
-    resolution: {integrity: sha512-8sPu6KfjD77MQv9pK7UOUABV3YJBISrG/FFdhVu8yqxpPeobkjCePfIm9n5iMgnQgyt104U5KCoRZQUUMVYddw==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      '@rive-app/canvas': 1.1.3
-      react: 18.2.0
-    dev: false
 
   /@rollup/plugin-babel/5.3.1_b6cdhqm2xsfe2bpl424qdsl4ei:
     resolution: {integrity: sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q==}
