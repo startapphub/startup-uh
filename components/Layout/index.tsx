@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import Head from 'next/head';
 import BottomNav from './BottomNav';
+import Modal from 'components/children/Modal';
 
 type LayoutProps = {
   title: string;
@@ -21,7 +22,9 @@ const Layout: FC<LayoutProps> = ({
         <title>{title}</title>
         <meta name="description" content={description} />
       </Head>
-      <main className="px-[5vw]">{children}</main>
+      <main className="px-[5vw]">
+        {children} <Modal />
+      </main>
       {isBottomNav && <BottomNav />}
     </>
   );

@@ -5,7 +5,8 @@ import {
   DasborKegiatan,
   MenuCepat,
   TopEvent,
-} from '../components/Home';
+  TopIdeabox,
+} from 'components/Home';
 
 const Home: NextPage = () => (
   <Layout title="Startup Unhas" isBottomNav>
@@ -13,6 +14,7 @@ const Home: NextPage = () => (
     <DasborKegiatan />
     <MenuCepat />
     <TopEvent />
+    <TopIdeabox />
   </Layout>
 );
 

@@ -14,7 +14,7 @@ const Box: FC = () => (
     />
     <div className="flex h-full flex-col justify-between content-between items-start ml-4">
       <div className="flex justify-between items-center w-full">
-        <TextBadge color="bg-red-200" text="Lomba" />
+        <TextBadge className="bg-red-500 text-red-600" text="Lomba" />
         <MedalStar color="#2CCCE4" size={25} />
       </div>
       <p className="font-bold text-gray-50 text-base text-start py-2">

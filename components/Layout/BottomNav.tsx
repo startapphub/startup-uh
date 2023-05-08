@@ -7,9 +7,22 @@ type NavItemProps = {
 };
 
 const NavItem: FC<NavItemProps> = ({ icon, isActive = false }) => (
-  <div className="flex flex-col items-center justify-center gap-1">
+  <div
+    className={`flex flex-col items-center justify-center gap-1 ${
+      !isActive && 'opacity-40'
+    }`}
+  >
     {icon}
-    {isActive && <span className="bg-gray-50 w-1 h-1 rounded-full" />}
+    {isActive && (
+      <>
+        <span className="bg-gray-50 w-1 h-1 rounded-full" />
+        <div className="absolute p-11 transition-all">
+          <div
+            className={`bg-white absolute inset-0 m-auto blur-lg bg-opacity-70 w-6 h-6 rounded-full`}
+          />
+        </div>
+      </>
+    )}
   </div>
 );
 
