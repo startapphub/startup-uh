@@ -1,4 +1,11 @@
 import { AppProps /* , AppContext */ } from 'next/app';
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
 import { type AppType } from 'next/app';
 import Head from 'next/head';
 
@@ -30,7 +37,15 @@ const App: AppType<AppProps> = ({ Component, pageProps }) => (
       height={3}
     />
     <div className={nunito.className}>
-      <Component {...pageProps} />
+    <ClerkProvider>
+    <SignedOut>
+      <SignInButton />
+    </SignedOut>
+    <SignedIn>
+      <UserButton />
+    </SignedIn>
+        <Component {...pageProps} />
+        </ClerkProvider>
     </div>
   </>
 );
