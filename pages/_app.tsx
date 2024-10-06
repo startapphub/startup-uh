@@ -1,5 +1,6 @@
-import { AppProps /* , AppContext */ } from 'next/app';
-import { type AppType } from 'next/app';
+import { ClerkProvider } from '@clerk/nextjs';
+import { dark } from '@clerk/themes';
+import { AppProps /* , AppContext */, type AppType } from 'next/app';
 import Head from 'next/head';
 
 import 'styles/globals.css';
@@ -30,7 +31,9 @@ const App: AppType<AppProps> = ({ Component, pageProps }) => (
       height={3}
     />
     <div className={nunito.className}>
-      <Component {...pageProps} />
+      <ClerkProvider appearance={{ baseTheme: dark }}>
+        <Component {...pageProps} />
+      </ClerkProvider>
     </div>
   </>
 );

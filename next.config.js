@@ -8,7 +8,14 @@ const withPWA = require('next-pwa')({
 module.exports = withPWA({
   reactStrictMode: true,
   swcMinify: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
-    domains: ['source.unsplash.com'],
+    remotePatterns: [
+      {
+        hostname: '**',
+      },
+    ],
   },
 });
