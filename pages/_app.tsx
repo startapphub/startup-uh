@@ -1,13 +1,6 @@
-import { AppProps /* , AppContext */ } from 'next/app';
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from '@clerk/nextjs';
+import { ClerkProvider } from '@clerk/nextjs';
 import { dark } from '@clerk/themes';
-import { type AppType } from 'next/app';
+import { AppProps /* , AppContext */, type AppType } from 'next/app';
 import Head from 'next/head';
 
 import 'styles/globals.css';
