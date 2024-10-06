@@ -4,8 +4,9 @@ import {
   SignInButton,
   SignedIn,
   SignedOut,
-  UserButton
-} from '@clerk/nextjs'
+  UserButton,
+} from '@clerk/nextjs';
+import { dark } from '@clerk/themes';
 import { type AppType } from 'next/app';
 import Head from 'next/head';
 
@@ -37,15 +38,9 @@ const App: AppType<AppProps> = ({ Component, pageProps }) => (
       height={3}
     />
     <div className={nunito.className}>
-    <ClerkProvider>
-    <SignedOut>
-      <SignInButton />
-    </SignedOut>
-    <SignedIn>
-      <UserButton />
-    </SignedIn>
+      <ClerkProvider appearance={{ baseTheme: dark }}>
         <Component {...pageProps} />
-        </ClerkProvider>
+      </ClerkProvider>
     </div>
   </>
 );
